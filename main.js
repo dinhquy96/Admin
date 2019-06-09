@@ -6,6 +6,7 @@
         var title = document.getElementById("title").value;
         var author = document.getElementById("author").value;
           var category = document.getElementById("category").value;
+           var files = sessionStorage.getItem('img');
          var content = document.getElementById("content").value;
         var date = document.getElementById("date").value;
 
@@ -17,6 +18,7 @@
                         <td>`+ author +`</td>
                         <td>`+category+`</td>
                         <td>` +title+ `</td>
+                         <td><img src="`+ files +`" style="width: 70px; height: 70px;"></td>
                         <td>`+ content+ `</td>
                         <td>` + date+ `</td>
                         <td>
@@ -275,6 +277,51 @@
       });
     });
 
+     $(function() {
+                $('#tableView').on('click', 'tbody tr', function(event) {
+                   // document.getElementById("postForm").action= "admin.php?controller=product_researcher&act=edit";
+
+                $(this).addClass('highlight').siblings().removeClass('highlight');
+                var fullname = $(this).closest('.highlight').find('td:nth-child(1)').text();
+                var description = $(this).closest('.highlight').find('td:nth-child(4)').text();
+               
+               //alert(idProduct); 
+                document.getElementById("nameRole").value = fullname;
+                document.getElementById("description").value = description;
+                // document.getElementById("author1").value = author;
+                // document.getElementById("category1").value = category;
+                // document.getElementById("content1").value = content;
+                // document.getElementById("date1").value = date;
+
+                //$(this).closest('.highlight').find('td:nth-child(4)').val("ok");
+                                   
+      });
+    });
+
+     $(function() {
+                $('#tableUser').on('click', 'tbody tr', function(event) {
+                   // document.getElementById("postForm").action= "admin.php?controller=product_researcher&act=edit";
+
+                $(this).addClass('highlight').siblings().removeClass('highlight');
+                var id = $(this).closest('.highlight').find('td:nth-child(1)').text();
+                var fullname = $(this).closest('.highlight').find('td:nth-child(2)').text();
+                var avatar = $(this).closest('.highlight').find('td:nth-child(3)').attr('src');
+                var date = $(this).closest('.highlight').find('td:nth-child(4)').text();
+                var email = $(this).closest('.highlight').find('td:nth-child(5)').text();
+                var role = $(this).closest('.highlight').find('td:nth-child(6)').text();
+               //alert(idProduct); 
+                document.getElementById("id").value = id;
+                document.getElementById("email").value = email;
+                document.getElementById("fullname").value = fullname;
+                document.getElementById("date").value = date;
+                //document.getElementById("content1").value = content;
+                //document.getElementById("date1").value = date;
+
+                ////$(this).closest('.highlight').find('td:nth-child(4)').val("ok");
+                                   
+      });
+    });
+
     function subscribe(){
     	var yourName = document.getElementById("yourName").value;
         var email = document.getElementById("email").value;
@@ -324,11 +371,11 @@
     	$("#success-alert2").hide();
     	$("#success-alert3").hide();
       //alert(email);
-      var email = sessionStorage.getItem("email");
+   //   var email = sessionStorage.getItem("email");
       //alert(email);
       if(email == null )
       {
-        window.location = 'https://hanu98.github.io/Admin/';
+   //     window.location = 'https://hanu98.github.io/Admin/';
       }
     	// $("#myWish").click(function showAlert(){
     	// 	$("#success-alert").alert();

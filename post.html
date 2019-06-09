@@ -443,6 +443,11 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                                    <input type="text"  class="form-control" id="category" value="" >
                                  </div>
                                  <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label" >Image:</label>
+                                   <input type="file" id="files" name="files[]" multiple />
+                                    <output style="width: 200px;" id="list"></output>
+                                  </div>
+                                 <div class="form-group">
                                   <label for="message-text" class="col-form-label">Content:</label>
                                   <textarea class="form-control" id="content" style="height: 300px;text-align:justify;" ></textarea>
                                 </div>
@@ -488,6 +493,11 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                                    <label for="message-text" class="col-form-label">Category:</label>
                                    <input type="text"  class="form-control" id="category1" value="" >
                                  </div>
+                                 <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label" >Image:</label>
+                                   <input type="file" id="files" name="files[]" multiple />
+                                    <output style="width: 200px;" id="list"></output>
+                                  </div>
                                  <div class="form-group">
                                   <label for="message-text" class="col-form-label">Content:</label>
                                   <textarea class="form-control" id="content1" style="height: 300px;text-align:justify;" ></textarea>
@@ -541,6 +551,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                         <th>Author</th>
                         <th>Category</th>
                         <th>Title</th>
+                        <th>Image</th>
                         <th>Content</th>
                         <th>Update at</th>
                         <th style="text-align: center; width: 150px;">Action</th>
@@ -552,6 +563,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                         <td>John Doe</td>
                         <td>CodeLife</td>
                         <td>How to write Clean Code?</td>
+                        <td><img src="dist/img/avatar5.png" style="width: 70px; height: 70px;"></td>
                         <td>Clean Code — A Handbook of Agile Software Craftsmanship is a must-read book for developers, especially when you want to .</td>
                         <td>11-5-2019</td>
                         <td>
@@ -564,6 +576,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                           <td>John Nguyen</td>
                           <td>Ruby</td>
                           <td>Build Instagram by Ruby on Rails (Part 1)</td>
+                           <td><img src="dist/img/avatar5.png" style="width: 70px; height: 70px;"></td>
                           <td>MVC (Model — View — Controller) in Ruby on Rails
                           MVC is an architectural pattern of a software application.</td>
                           <td>11-7-2019</td>
@@ -577,6 +590,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                 <td>Sansa Stark</td>
                 <td>Crypto</td>
                 <td>A forgetful programmer and the rule-that-must-not-be-forgotten</td>
+                 <td><img src="dist/img/avatar5.png" style="width: 70px; height: 70px;"></td>
                 <td>very time en route to my seat, I’ve walked by a wall with this saying.</td>
                 <td>11-3-2019</td>
                <td>
@@ -590,6 +604,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td>Jon Snow</td>
                   <td>DEV</td>
                   <td>Resolving tricky situations with git reset and rebase</td>
+                   <td><img src="dist/img/avatar5.png" style="width: 70px; height: 70px;"></td>
                   <td>You should care about how clean your Git history is. It provides a way to communicate changes to a codebase.</td>
                   <td>11-7-2018</td>
                  <td>
@@ -603,6 +618,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td>Ned Stark</td>
                   <td>AI</td>
                   <td>AI in Five, Fifty and Five Hundred Years — Part Two — Fifty Years</td>
+                   <td><img src="dist/img/avatar5.png" style="width: 70px; height: 70px;"></td>
                   <td>Once dumb objects have woken up. Your shirt is babbling away with your shades and having a conversation .</td>
                   <td>11-7-2014</td>
                  <td>
@@ -616,6 +632,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td>Phuong Nguyen</td>
                   <td>CodeLife</td>
                   <td>A Practical Intro to Test Driven Development</td>
+                   <td><img src="dist/img/avatar5.png" style="width: 70px; height: 70px;"></td>
                   <td>These days you read a ton of articles about all the advantages of doing Test Driven Development (TDD).</td>
                   <td>11-7-2019</td>
                  <td>
@@ -628,6 +645,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                     <td>Brandon Stark</td>
                     <td>Ruby</td>
                     <td>Build Instagram by Ruby on Rails (Part 3)</td>
+                    <td><img src="dist/img/avatar5.png" style="width: 70px; height: 70px;"></td>
                     <td>What’ll you learn after reading the article? CRUD in Active Record: Read/Delete Posts and CRUD Hashtags.</td>
                     <td>11-7-2014</td>
                    <td>
@@ -641,6 +659,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                     <td>Cercie Lanister</td>
                     <td>CodeLife</td>
                     <td>Learn Dart In A Week With These Free Resources</td>
+                     <td><img src="dist/img/avatar5.png" style="width: 70px; height: 70px;"></td>
                     <td>In this article, I sum up some of the best resources and tutorials for the Dart programming language as of 2019.</td>
                     <td>11-1-2017</td>
                    <td>
@@ -654,6 +673,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                     <td>Little Finger</td>
                     <td>DEV</td>
                     <td>A Practical Intro to Test Driven Development</td>
+                    <td><img src="dist/img/avatar5.png" style="width: 70px; height: 70px;"></td>
                     <td>Test Driven Development is hard! This is the untold truth about it.</td>
                     <td>11-7-2017</td>
                    <td>
