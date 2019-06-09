@@ -354,6 +354,12 @@
             });
 
 
+     function logout(){
+  sessionStorage.removeItem("email");
+  window.location = 'https://hanu98.github.io/Admin/';
+ }
+
+
      function handleFileSelect(evt) {
     var files = evt.target.files; // FileList object
 
