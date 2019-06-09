@@ -26,8 +26,76 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style type="text/css">
+    body{
+      position: relative;
+    }
+    #success-alert{
+      position: fixed;
+      top: 50px;
+      width: 500px;
+      left: 500px;
+      z-index: 10000;
+
+    }
+    #success-alert1{
+      position: fixed;
+      top: 50px;
+      width: 500px;
+      left: 500px;
+      z-index: 10000;
+
+    }
+    #success-alert2{
+      position: fixed;
+      top: 50px;
+      width: 500px;
+      left: 500px;
+      z-index: 10000;
+
+    }
+    #success-alert3{
+      position: fixed;
+      top: 50px;
+      width: 500px;
+      left: 500px;
+      z-index: 10000;
+
+    }
+  </style>
 </head>
 <body class="hold-transition login-page">
+
+
+	 <div id="success-alert1" class="alert alert-success alert-dismissible" role="alert">
+         <h4><i class="icon fa fa-check"></i> Alert!</h4>
+        <strong>Edit successfully !</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div id="success-alert2" class="alert alert-danger alert-dismissible" role="alert">
+      <h4><i class="icon fa fa-warning"></i> Alert!</h4>
+        <strong>No successfully !</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div id="success-alert3" class="alert alert-danger alert-dismissible" role="alert">
+       <h4><i class="icon fa fa-check"></i> Alert!</h4>
+        <strong>Invalid username or Invalid password !</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+     <div id="success-alert" class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i> Alert!</h4>
+                Login successfully !
+              </div>
 <div class="login-box">
   <div class="login-logo">
     <a href="index2.html"><b>Admin</b>LTE</a>
