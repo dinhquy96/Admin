@@ -194,7 +194,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                 <a href="" onclick="logout()" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -342,6 +342,36 @@
     <!-- Main content -->
     <section class="content">
 
+        <div id="success-alert1" class="alert alert-success alert-dismissible" role="alert">
+         <h4><i class="icon fa fa-check"></i> Alert!</h4>
+        <strong>Edit successfully !</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div id="success-alert2" class="alert alert-danger alert-dismissible" role="alert">
+      <h4><i class="icon fa fa-warning"></i> Alert!</h4>
+        <strong>No successfully !</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div id="success-alert3" class="alert alert-danger alert-dismissible" role="alert">
+       <h4><i class="icon fa fa-check"></i> Alert!</h4>
+        <strong>Remove successfully !</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+     <div id="success-alert" class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i> Alert!</h4>
+                Post successfully !
+              </div>
+
       <!-- Default box -->
       <div class="box">
         <div class="box-header with-border">
@@ -362,7 +392,7 @@
             <div class="box-header">
               <h3 class="box-title">Assign Role</h3> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
               <div style=" float: right; margin-right: 100px;">
-              <button type="button" class="btn btn-info">Save</button></div>
+              <button type="button" class="btn btn-info" onclick="save()" >Save</button></div>
               <div class="box-tools">
                 
                     
@@ -441,7 +471,7 @@
                   <td>
                     <div class="btn-group">
                       <label class="checkbox-inline">
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="" checked="">
                       </label>
                     </div>
                   </td>
@@ -468,14 +498,14 @@
                   <td>
                     <div class="btn-group">
                       <label class="checkbox-inline">
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="" checked="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="btn-group">
                       <label class="checkbox-inline">
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="" checked="">
                       </label>
                     </div>
                   </td>
@@ -502,14 +532,14 @@
                   <td>
                     <div class="btn-group">
                       <label class="checkbox-inline">
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="" checked="">
                       </label>
                     </div>
                   </td>
                   <td>
                     <div class="btn-group">
                       <label class="checkbox-inline">
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="" checked="">
                       </label>
                     </div>
                   </td>
@@ -783,5 +813,6 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

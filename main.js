@@ -503,6 +503,13 @@
   window.location = 'https://hanu98.github.io/Admin/';
  }
 
+  function save(){
+  $("#success-alert").show();
+        window.setTimeout(function (){
+            $("#success-alert").hide();
+        },2000);
+ }
+
 
      function handleFileSelect(evt) {
     var files = evt.target.files; // FileList object
