@@ -125,7 +125,7 @@
                       <td>`+ email +`</td>
                       <td>`+ admin +`</td>
                        <td>
-                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" ><i class="fa fa-eye"></i></button>
+                         
                          <button type="button" onclick="showedit()"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"  > <i class="fa fa-edit"></i></button>  
                           <a class="btn btn-danger" href="#" ><i class="fa fa-trash"></i></a> </td>
                     </tr>`
@@ -143,6 +143,103 @@
         document.getElementById("category").value = '';
         document.getElementById("content").value = '';
         document.getElementById("date").value = '';
+        }
+        else{
+             $("#success-alert2").show();
+        window.setTimeout(function (){
+            $("#success-alert2").hide();
+        },2000);
+        }   
+    }
+    
+    function addFolder(){
+        var d = new Date();
+        //alert(d);
+        //alert(row);
+         var nameFolder = document.getElementById("nameFolder").value;
+        //nameFolder
+        // var files = sessionStorage.getItem('img');
+         //var day = d.getDate() + '/' +d.getMonth() +'/'+ d.getFullYear();
+         //alert(day);
+         
+       
+       //var admin = $("input[name='drone']:checked").val();
+        //alert(admin);
+        if( nameFolder != '' ){
+            //addSession(nickname1);
+            $('#folder').prepend(
+            ` <li><a href=""><i class="fa fa-folder"></i>`+nameFolder+`</a></li>`
+            );
+
+            //alert(sessionStorage.getItem("yourName"));
+        //window.location= 'post.html#comments';
+        $("#success-alert").show();
+        window.setTimeout(function (){
+            $("#success-alert").hide();
+        },2000);
+        // document.getElementById("id").value = '';
+        // document.getElementById("title").value = '';
+        // document.getElementById("author").value = '';
+        // document.getElementById("category").value = '';
+        // document.getElementById("content").value = '';
+        // document.getElementById("date").value = '';
+        }
+        else{
+             $("#success-alert2").show();
+        window.setTimeout(function (){
+            $("#success-alert2").hide();
+        },2000);
+        }   
+    }
+
+    function addFile(){
+        var d = new Date();
+        //alert(d);
+        //alert(row);
+         var files = sessionStorage.getItem('img');
+         var day = d.getDate() + '/' +d.getMonth() +'/'+ d.getFullYear();
+         //alert(day);
+         
+       
+       //var admin = $("input[name='drone']:checked").val();
+        //alert(admin);
+        if( files != '' ){
+            //addSession(nickname1);
+            $('#filebox').prepend(
+            `<div class="file-box">
+                            <div class="file">
+                              <a href="#">
+                                <span class="corner"></span>
+
+                                <div class="image">
+                                  <img alt="image" class="img-responsive" src="`+files+`">
+                                </div>
+                                <div class="file-name">
+                                  My feel.png
+                                  <br>
+                                  <small>Added:`+day+`</small>
+                                </div>
+                                &nbsp; &nbsp;
+                                <button type="button"  data-toggle="modal" data-target="#exampleModal22" data-whatever="@mdo"><i class="fa fa-eye"></i></button> &nbsp; &nbsp; &nbsp; &nbsp;
+                                <button type="button"  data-toggle="modal" data-target="#exampleModaledit" data-whatever="@fat"><i class="fa fa-edit"></i></button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <button type="button"  data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><i class="fa fa-trash"></i></button>
+                              </a>
+                            </div>
+                          </div>`
+            );
+
+            //alert(sessionStorage.getItem("yourName"));
+        //window.location= 'post.html#comments';
+        $("#success-alert").show();
+        window.setTimeout(function (){
+            $("#success-alert").hide();
+        },2000);
+        // document.getElementById("id").value = '';
+        // document.getElementById("title").value = '';
+        // document.getElementById("author").value = '';
+        // document.getElementById("category").value = '';
+        // document.getElementById("content").value = '';
+        // document.getElementById("date").value = '';
         }
         else{
              $("#success-alert2").show();
