@@ -7,6 +7,11 @@
       //alert(email);
     });
 
+ function logout(){
+ 	sessionStorage.removeItem("email");
+ 	window.location = 'https://hanu98.github.io/Admin/';
+ }
+
  function login(){
        var email = document.getElementById("emailLogin").value;
         var pass = document.getElementById("passwordLogin").value;
