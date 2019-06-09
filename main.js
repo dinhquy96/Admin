@@ -468,11 +468,11 @@
     	$("#success-alert2").hide();
     	$("#success-alert3").hide();
       //alert(email);
-   //   var email = sessionStorage.getItem("email");
+      var email = sessionStorage.getItem("email");
       //alert(email);
       if(email == null )
       {
-   //     window.location = 'https://hanu98.github.io/Admin/';
+        window.location = 'https://hanu98.github.io/Admin/';
       }
     	// $("#myWish").click(function showAlert(){
     	// 	$("#success-alert").alert();
