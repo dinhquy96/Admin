@@ -220,8 +220,8 @@
     }
     function edit(){
        
-                 var id = document.getElementById("id1").value;
-                var title = document.getElementById("title1").value;
+        var id = document.getElementById("id1").value;
+        var title = document.getElementById("title1").value;
         var author = document.getElementById("author1").value;
           var category = document.getElementById("category1").value;
          var content = document.getElementById("content1").value;
@@ -241,9 +241,6 @@
                           <a class="btn btn-danger" href="#" ><i class="fa fa-trash"></i></a> </td>
                           </tr>`
             );
-                 
-                
-
             //alert(sessionStorage.getItem("yourName"));
         //window.location= 'post.html#comments';
         $("#success-alert1").show();
