@@ -320,12 +320,27 @@
 											</ul>`);
 
     }
+    function login(){
+       var email = document.getElementById("emailLogin").value;
+        var pass = document.getElementById("passwordLogin").value;
+
+        if(email == 'admin' && pass == 'hanu98' ){
+          window.location = 'https://hanu98.github.io/Admin/index1.html';
+        }
+    }
 
     $(document).ready (function(){
     	$("#success-alert").hide();
     	$("#success-alert1").hide();
     	$("#success-alert2").hide();
     	$("#success-alert3").hide();
+      alert(email);
+      var email = sessionStorage.getItem("email");
+      alert(email);
+      if(email == null )
+      {
+        window.location = 'https://hanu98.github.io/Admin/';
+      }
     	// $("#myWish").click(function showAlert(){
     	// 	$("#success-alert").alert();
     	// })
