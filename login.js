@@ -23,7 +23,7 @@
 
           window.location = 'https://hanu98.github.io/Admin/index1.html';
         }
-        else if(email == 'trangem@gmail.com' && pass == 'hanu98' ){
+        else if(email == 'tranghanu@gmail.com' && pass == 'hanu98' ){
           sessionStorage.setItem("email",email);
            sessionStorage.setItem("status",'10');
 
@@ -45,7 +45,7 @@
         },2000);
           window.location = 'https://hanu98.github.io/nAdmin/';
         }
-        else if(email == 'hueem@gmail.com' && pass == 'hanu98' ){
+        else if(email == 'editor@gmail.com' && pass == 'hanu98' ){
           sessionStorage.setItem("email",email);
            sessionStorage.setItem("status",'1');
            
