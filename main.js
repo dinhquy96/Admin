@@ -513,6 +513,14 @@
 		        	$("#success-alert3").hide();
 		        },2000);
             });
+     $('#tableUser').on('click', '.fa-trash', function (e) {
+                var selectedRow = $(this).closest('tr');
+                selectedRow.remove();
+                $("#success-alert3").show();
+            window.setTimeout(function (){
+              $("#success-alert3").hide();
+            },2000);
+            });
 
 
      function logout(){
